@@ -1,22 +1,23 @@
-/*************************************************************
-* EINGABE: Folge in Feld A
-* AUSGABE: sortierte Folge in Feld A
-* VARIABLE: indizes minpos,i,j
-*
-* 1:  for j = 1,2,...,n-1 {
-* 2:    //Bestimme Position des Minimums aus A[j],...,A[n]
-* 3:    minpos = j;
-* 4:    for i = j + 1,...,n {
-* 5:        if A[i].key < A[minpos].key then {
-* 6:            minpos = i;
-* 7:        }
-* 8:    }
-* 9:    if minpos > j then {
-* 10:       Vertausche A[minpos] mit A[j];
-* 11:   }
-* 12: }
-**************************************************************/
+/**
 
+ EINGABE: Folge in Feld A
+ AUSGABE: sortierte Folge in Feld A
+ VARIABLE: indizes minpos,i,j
+
+ 1:  for j = 1,2,...,n-1 {
+ 2:    //Bestimme Position des Minimums aus A[j],...,A[n]
+ 3:    minpos = j;
+ 4:    for i = j + 1,...,n {
+ 5:        if A[i].key < A[minpos].key then {
+ 6:            minpos = i;
+ 7:        }
+ 8:    }
+ 9:    if minpos > j then {
+ 10:       Vertausche A[minpos] mit A[j];
+ 11:   }
+ 12: }
+
+ */
 
 public class SelectionSort {
 

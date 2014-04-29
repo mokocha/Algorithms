@@ -19,8 +19,8 @@ public class Test {
 
         int[] test = {7,1012,13,128,5,4711,34};
 //        InsertionSort.sort(test);
-        SelectionSort.sort(test);
-//        MergeSort.sort(test);
+//        SelectionSort.sort(test);
+        MergeSort.sort(test);
 //        HeapSort.sort(test);
 //        QuickSort.sort(test);
     }
