@@ -56,5 +56,4 @@ public class SelectionSort {
 
         System.out.print('\n');
     }
-
 }

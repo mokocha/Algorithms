@@ -24,7 +24,7 @@ public class InsertionSort {
 
         n = array.length;
 
-        for(j=1; j<n;j++) {
+        for(j=1; j < n;j++) {
             key = array[j];
             i = j - 1;
 
