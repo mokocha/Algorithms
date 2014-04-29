@@ -1,4 +1,4 @@
-/*
+/*************************************************************
 * EINGABE: Folge in Feld A
 * AUSGABE: sortierte Folge in Feld A
 * VARIABLE: indizes minpos,i,j
@@ -15,7 +15,7 @@
 * 10:       Vertausche A[minpos] mit A[j];
 * 11:   }
 * 12: }
-* */
+**************************************************************/
 
 
 public class SelectionSort {
@@ -29,15 +29,15 @@ public class SelectionSort {
         n = array.length;
 
         for(int j = 0; j < n;j++) {
-            minpos = j;
+            minpos = j; //points to the lowest value found
 
-            for(int i=j+1;i < n;i++) {
-                if(array[i] < array[minpos]) {
-                    minpos = i;
+            for(int i=j+1;i < n;i++) { //finds the lowest value in the array
+                if(array[minpos] > array[i]) { //compare this key with the next
+                    minpos = i; //if the next value is lower, point 'minpos' on that value
                 }
             }
 
-            if(minpos > j) {
+            if(minpos > j) { //if the minimal value key has higher index than our current iteration, switch
                 int temp = array[j];
                 array[j] = array[minpos];
                 array[minpos] = temp;
